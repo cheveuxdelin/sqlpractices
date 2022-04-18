@@ -9,3 +9,8 @@ IMPORT DATA
 EXPORTING DATA
 1- exporting data from tables
 2- exporting data from queries
+
+SQL OPERATIONS
+1- math operations as queries
+2- queries with math operations
+3-queries without from
