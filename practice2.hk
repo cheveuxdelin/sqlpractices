@@ -1,0 +1,11 @@
+
+IMPORT DATA
+1- create table
+2- import data from csv
+3- possible to import only selected columns
+4- possible to query with where when importing
+5- using temporary tables when importing to cleanup data
+
+EXPORTING DATA
+1- exporting data from tables
+2- exporting data from queries
