@@ -1,0 +1,12 @@
+--Constraints
+
+Primary key (unique/ not null)
+
+Condiciones como constraint
+CONSTRAINT check_salary_not_below_zero CHECK (salary >= 0)
+
+Contraints unicos
+Value in column must be unique
+
+Not null
+Valor no puede ser null, debe tener un valor
