@@ -1,0 +1,47 @@
+Cleanup data
+
+Finding duplicates
+  identify the columns
+  use group by and having to select that columns
+  
+Find missing data (records with null values)
+  we can group and count
+  we can use nulls first on the order by
+
+Constraints for some columns (zip, phone, )
+  zip lenght must be 5
+  
+  
+  
+  Steps to fix the data.
+   1.- Create a backup table.
+   Create table <table name> as select <>
+   2.- if it possible create a new column and work in the new column 
+    Fix the missing st values
+    
+  Review the update stm
+    update table_name
+    set colum_name = value, column_name2 = value2
+    where condition;
+    
+  Challange
+  Add a new colum meat_processing (boolean)
+    set this column to true if the company has 'Meat Processing'
+    
+  
+   For delete duplicates
+    Use an aggregate function to find out the values that you want to keep (max, min)
+    
+    delete from meat_poultry_egg_establishments
+where establishment_number not in (
+	SELECT max(establishment_number)
+FROM meat_poultry_egg_establishments
+GROUP BY company, street, city, st
+);
+
+
+TRANSACTIONS
+ help us to group db operations 
+ rollback 
+ commit
+ use transaction all the time you are updating data.
